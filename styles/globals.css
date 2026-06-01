@@ -1,0 +1,196 @@
+/* Design System & Global Styles — Ethereal Gamer Dark */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+:root {
+  /* Colors - Dark Mode (Default) */
+  --bg-base: #06080c;
+  --bg-surface: #0f131a;
+  --bg-surface-nested: #161b24;
+  --bg-bezel: rgba(255, 255, 255, 0.03);
+  
+  --accent-cyan: #00e5ff;
+  --accent-cyan-rgb: 0, 229, 255;
+  --accent-violet: #7c3aed;
+  --accent-violet-rgb: 124, 58, 237;
+  --accent-amber: #ffb400;
+  
+  --border-light: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 229, 255, 0.15);
+  
+  --text-primary: #f0f4ff;
+  --text-muted: #8899b8;
+  --text-inverse: #06080c;
+  
+  --shadow-diffused: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  --shadow-neon: 0 0 20px rgba(0, 229, 255, 0.15);
+  
+  /* Layout & Spacing */
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --transition-fluid: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-theme="light"] {
+  /* Colors - Light Mode */
+  --bg-base: #f4f6fa;
+  --bg-surface: #ffffff;
+  --bg-surface-nested: #f8fafc;
+  --bg-bezel: rgba(0, 0, 0, 0.02);
+  
+  --accent-cyan: #00b4cc;
+  --accent-cyan-rgb: 0, 180, 204;
+  --accent-violet: #6d28d9;
+  --accent-violet-rgb: 109, 40, 217;
+  --accent-amber: #e6a100;
+  
+  --border-light: rgba(0, 0, 0, 0.06);
+  --border-glow: rgba(0, 180, 204, 0.1);
+  
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+  
+  --shadow-diffused: 0 10px 40px -10px rgba(15, 23, 42, 0.08);
+  --shadow-neon: 0 0 20px rgba(0, 180, 204, 0.1);
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100dvh;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Scanlines background effect */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.15) 50%
+  );
+  background-size: 100% 4px;
+  opacity: 0.2;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+  transition: var(--transition-fluid);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* Premium Enclosure (Double-Bezel) Card Technique */
+.double-bezel-outer {
+  background: var(--bg-bezel);
+  border: 1px solid var(--border-light);
+  padding: 6px;
+  border-radius: 24px;
+  transition: var(--transition-fluid);
+  box-shadow: var(--shadow-diffused);
+}
+
+.double-bezel-outer:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-diffused), var(--shadow-neon);
+}
+
+.double-bezel-inner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 24px;
+  height: 100%;
+}
+
+/* Premium neon glow text */
+.glow-text {
+  text-shadow: 0 0 10px rgba(var(--accent-cyan-rgb), 0.3);
+}
+
+/* Custom interactive active elements */
+.interactive-pill {
+  border-radius: 100px;
+  padding: 10px 24px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-spring);
+  user-select: none;
+  box-shadow: var(--shadow-diffused);
+}
+
+.interactive-pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-neon);
+}
+
+.interactive-pill:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.interactive-pill-primary {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+  color: #06080c;
+  border: none;
+  font-weight: 700;
+}
+
+.interactive-pill-primary:hover {
+  box-shadow: 0 0 25px rgba(var(--accent-cyan-rgb), 0.4);
+}
+
+/* Floating Grid background mesh */
+.grid-bg-mesh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  background-image: 
+    radial-gradient(at top center, rgba(var(--accent-violet-rgb), 0.08) 0%, transparent 60%),
+    radial-gradient(at top left, rgba(var(--accent-cyan-rgb), 0.05) 0%, transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}
