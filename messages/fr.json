@@ -159,5 +159,9 @@
       "p3_text": "Vous pouvez gérer ou supprimer ces paramètres stockés directement depuis les paramètres de votre navigateur ou en utilisant les fonctionnalités d'effacement de l'application."
     },
     "backHome": "Retour à l'accueil"
+  },
+  "metadata": {
+    "title": "Bingo Gamer",
+    "description": "Créez et jouez à des cartons de bingo de prédictions en direct lors d'événements de jeux vidéo comme le Summer Game Fest, l'Xbox Showcase et le Nintendo Direct !"
   }
 }

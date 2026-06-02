@@ -159,5 +159,9 @@
       "p3_text": "You can manage or delete these stored settings directly from your browser's settings or by using the clear features within the application."
     },
     "backHome": "Back to home"
+  },
+  "metadata": {
+    "title": "Bingo Gamer",
+    "description": "Create and play prediction bingo cards live during gaming events like Summer Game Fest, Xbox Showcase and Nintendo Direct!"
   }
 }

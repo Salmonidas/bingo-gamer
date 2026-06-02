@@ -4,6 +4,18 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [Unreleased]
+
+### Añadido
+- Verificación mediante etiqueta meta de Google Search Console en la metadata del layout principal para indexación orgánica.
+- Favicon gamer transparente, plano y optimizado (128x128px) acorde al sistema de diseño Ethereal Gamer Dark.
+
+### Arreglado
+- Reemplazada la restricción forzada de 100vh en los contenedores de las páginas por un espaciador Flexbox en el layout principal, anclando correctamente el pie de página (footer) al fondo sin generar scroll innecesario.
+
+### Añadido
+- Implementado el flujo de GitHub Actions para la creación automática de Releases bilingües al subir tags semánticos.
+
 ## [1.0.0] - 2026-06-01
 
 ### Añadido

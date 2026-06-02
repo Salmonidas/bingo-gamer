@@ -69,7 +69,6 @@ export default function DashboardPage() {
     <>
       <Navbar />
       <main style={{
-        minHeight: '100vh',
         padding: '120px 24px 60px 24px',
         maxWidth: '1200px',
         margin: '0 auto',

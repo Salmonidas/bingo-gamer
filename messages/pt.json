@@ -159,5 +159,9 @@
       "p3_text": "Pode gerir ou eliminar estas definições guardadas diretamente a partir das definições do seu navegador ou utilizando as funcionalidades de limpeza dentro da aplicação."
     },
     "backHome": "Voltar ao início"
+  },
+  "metadata": {
+    "title": "Bingo Gamer",
+    "description": "Crie e jogue cartelas de bingo de previsões ao vivo durante eventos de jogos como o Summer Game Fest, Xbox Showcase e Nintendo Direct!"
   }
 }

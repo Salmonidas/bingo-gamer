@@ -356,7 +356,7 @@ export default function EditCardPage({ params }: PageProps) {
     return (
       <>
         <Navbar />
-        <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-main)' }}>
+        <main style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-main)' }}>
           <div style={{ textAlign: 'center', padding: '40px', background: 'var(--bg-surface)', borderRadius: '16px', border: '1px solid var(--border-light)' }}>
             <h1 style={{ fontSize: '2rem', marginBottom: '16px', color: 'var(--text-primary)' }}>🔒 Private Card</h1>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>
@@ -405,12 +405,10 @@ export default function EditCardPage({ params }: PageProps) {
       </div>
     );
   }
-
-  return (
+return (
     <>
       <Navbar />
       <main style={{
-        minHeight: '100vh',
         padding: '120px 24px 60px 24px',
         maxWidth: '900px',
         margin: '0 auto',

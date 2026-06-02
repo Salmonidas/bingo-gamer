@@ -159,5 +159,9 @@
       "p3_text": "これらの保存された設定は、ブラウザの設定から直接管理・削除するか、アプリ内のクリア機能を使用して管理できます。"
     },
     "backHome": "ホームに戻る"
+  },
+  "metadata": {
+    "title": "Bingo Gamer",
+    "description": "Summer Game Fest、Xbox Showcase、Nintendo Directなどのゲームイベント中に、予想ビンゴカードをライブで作成してプレイしましょう！"
   }
 }

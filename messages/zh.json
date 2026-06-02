@@ -159,5 +159,9 @@
       "p3_text": "您可以直接通过浏览器的设置或使用应用内的清除功能来管理或删除这些已保存的设置。"
     },
     "backHome": "返回首页"
+  },
+  "metadata": {
+    "title": "Bingo Gamer",
+    "description": "在 Summer Game Fest、Xbox Showcase 和 Nintendo Direct 等游戏活动期间，实时创建并玩预测宾果卡！"
   }
 }

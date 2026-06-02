@@ -192,7 +192,6 @@ export default function CreateCardPage() {
     <>
       <Navbar />
       <main style={{
-        minHeight: '100vh',
         padding: '120px 24px 60px 24px',
         maxWidth: '800px',
         margin: '0 auto'
