@@ -22,6 +22,19 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
     title: t('title'),
     description: t('description'),
     metadataBase: new URL('https://bingo-gamer.vercel.app'),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        'en': '/en',
+        'es': '/es',
+        'fr': '/fr',
+        'de': '/de',
+        'ja': '/ja',
+        'zh': '/zh',
+        'it': '/it',
+        'pt': '/pt',
+      },
+    },
     verification: {
       google: 'Xyp89jI-bHwUwOTdgbQ1RqpvXox4hL2qgNmmPgEU9AU',
     },
