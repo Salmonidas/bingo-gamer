@@ -129,39 +129,60 @@
   },
   "legal": {
     "terms": {
-      "title": "服务条款",
-      "updated": "最近更新于",
-      "p1_title": "1. 条款的接受",
-      "p1_text": "通过访问和使用 Bingo Gamer，即表示您接受并同意受本协议条款和规定的约束。如果您不同意遵守上述条款，请勿使用本服务。",
-      "p2_title": "2. 服务说明",
-      "p2_text": "Bingo Gamer 针对游戏活动提供交互式网页版宾果游戏应用。本服务按“原样”提供，不提供任何形式的保证。",
-      "p3_title": "3. 用户行为规范",
-      "p3_text": "您同意不将本服务用于任何非法目的，或以任何可能中断、损坏或损害本服务的方式使用本服务。"
+      "title": "法律声明",
+      "updated": "最后更新",
+      "p1_title": "1. 目的",
+      "p1_text": "本法律声明规范对托管于 bingo-gamer.vercel.app 的 Bingo Gamer 网站的访问和使用。",
+      "p2_title": "2. 知识产权",
+      "p2_text": "本项目源代码在 AGPL-3.0 许可证下发布。所有内容均为其各自作者的财产。",
+      "p3_title": "3. 免责声明",
+      "p3_text": "所有者不对因使用本网站而产生的损害负责。服务按\"现状\"提供，不作任何形式的保证。",
+      "p4_title": "4. 适用法律",
+      "p4_text": "本法律声明受西班牙法律管辖。",
+      "p5_title": "5. 所有者身份",
+      "p5_text": "所有者采用集中式法律身份模式运营。注册和税务数据（业务：软件开发、Web应用程序和技术服务）可在以下位置查看：",
+      "p5_link": "法律身份"
     },
     "privacy": {
       "title": "隐私政策",
-      "updated": "最近更新于",
-      "p1_title": "1. 信息收集",
-      "p1_text": "Bingo Gamer 不会在我们的服务器上收集、传输或存储任何个人数据。所有的游戏进度、自定义图片和设置均保存在您本地设备的浏览器中。",
-      "p2_title": "2. 第三方服务",
-      "p2_text": "我们没有接入任何会收集您个人信息的第三方追踪或分析服务。",
-      "p3_title": "3. 您的权利",
-      "p3_text": "由于所有数据都存储在您的本地浏览器中，您对此拥有完全的控制权。您可以通过清除浏览器的网站数据来删除所有的应用数据。"
+      "updated": "最后更新",
+      "p1_title": "1. 数据控制者",
+      "p1_text": "本网站的数据控制者在法律声明部分中标识。",
+      "p2_title": "2. 我们处理的数据",
+      "p2_text": "Bingo Gamer 遵循严格的本地优先架构。所有数据仅存储在您的浏览器中。",
+      "p3_title": "3. 数据处理者（第三方）",
+      "p3_text": "(1) Vercel Inc. — 处理IP地址的托管提供商。(2) Lemon Squeezy — 自愿捐款的支付处理商。",
+      "p4_title": "4. 国际传输",
+      "p4_text": "Vercel 和 Lemon Squeezy 在欧盟-美国数据隐私框架 (DPF) 下运营。",
+      "p5_title": "5. 您的权利（GDPR）",
+      "p5_text": "根据GDPR，您拥有访问、更正、删除、限制、可携带性和反对的权利。由于所有数据都存储在本地，您可以通过清除浏览器的站点数据来行使这些权利。",
+      "p6_title": "6. 数据保留",
+      "p6_text": "本地数据在手动删除前持续存在。服务器日志（通过Vercel的IP）保留最多30天。"
     },
     "cookies": {
-      "title": "Cookie 政策",
-      "updated": "最近更新于",
-      "p1_title": "1. 什么是 Cookie？",
-      "p1_text": "Cookie 和本地存储是您的网页浏览器在您的设备上存储的微型文本文件或数据。",
-      "p2_title": "2. 我们如何使用本地存储",
-      "p2_text": "我们仅严格使用本地存储机制（如 IndexedDB 和 localStorage）来保存您的宾果卡配置、深色/浅色模式偏好以及语言设置。我们不使用任何追踪或广告性 Cookie。",
-      "p3_title": "3. 管理存储数据",
-      "p3_text": "您可以直接通过浏览器的设置或使用应用内的清除功能来管理或删除这些已保存的设置。"
+      "title": "Cookie和存储政策",
+      "updated": "最后更新",
+      "p1_title": "1. 什么是Cookie？",
+      "p1_text": "Cookie是存储在您设备上的小型文本文件。等效技术（localStorage、IndexedDB）受到相同的法律待遇。",
+      "p2_title": "2. 使用的技术",
+      "p2_text": "Bingo Gamer 仅使用应用程序正常运行所必需的技术存储机制。不使用跟踪或广告Cookie。",
+      "p3_title": "3. 存储详情",
+      "p3_text": "localStorage：主题、语言、Cookie同意。IndexedDB：宾果卡配置、活动标志、单元格图像。所有数据保留在设备上。",
+      "p4_title": "4. 法律豁免",
+      "p4_text": "根据LSSI-CE第22.2条和AEPD指南，本网站因仅使用严格必要的Cookie而免于获得事先同意。",
+      "p5_title": "5. 数据管理",
+      "p5_text": "您可以随时通过浏览器设置或应用内的清除功能删除所有存储的数据。"
     },
     "backHome": "返回首页"
   },
   "metadata": {
     "title": "Bingo Gamer",
     "description": "在 Summer Game Fest、Xbox Showcase 和 Nintendo Direct 等游戏活动期间，实时创建并玩预测宾果卡！"
+  },
+  "donation": {
+    "title": "支持这个项目 💖",
+    "description": "选择最适合您的支持方式...",
+    "lemonSqueezy": "☕ 请我喝杯咖啡 (Apple/Google Pay, 银行卡, PayPal)",
+    "github": "🐙 GitHub Sponsors (一次性或每月)"
   }
 }

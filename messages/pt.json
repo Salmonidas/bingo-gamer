@@ -129,39 +129,60 @@
   },
   "legal": {
     "terms": {
-      "title": "Termos de Serviço",
+      "title": "Aviso Legal",
       "updated": "Última atualização",
-      "p1_title": "1. Aceitação dos Termos",
-      "p1_text": "Ao aceder e utilizar o Bingo Gamer, aceita e concorda em cumprir os termos e disposições deste acordo. Se não concordar em cumprir com o exposto acima, por favor não utilize este serviço.",
-      "p2_title": "2. Descrição do Serviço",
-      "p2_text": "O Bingo Gamer disponibiliza uma aplicação web interativa de bingo para eventos de gaming. O serviço é fornecido 'tal como está', sem garantias de qualquer tipo.",
-      "p3_title": "3. Condotta del Utilizador",
-      "p3_text": "Concorda em não utilizar o serviço para qualquer fim ilegal ou de qualquer forma que interrompa, danifique ou prejudique o serviço."
+      "p1_title": "1. Objeto",
+      "p1_text": "O presente Aviso Legal regula o acesso e uso do site Bingo Gamer, alojado em bingo-gamer.vercel.app.",
+      "p2_title": "2. Propriedade Intelectual",
+      "p2_text": "O código fonte deste projeto está licenciado sob AGPL-3.0. Todo o conteúdo é propriedade dos respetivos autores.",
+      "p3_title": "3. Limitação de Responsabilidade",
+      "p3_text": "O titular não é responsável por danos derivados do uso do Site. O serviço é fornecido \"tal como está\" sem garantias.",
+      "p4_title": "4. Lei Aplicável",
+      "p4_text": "O presente Aviso Legal é regido pela legislação espanhola.",
+      "p5_title": "5. Identidade do Titular",
+      "p5_text": "O titular opera sob um modelo de Identidade Legal Centralizada. Os dados registrais e fiscais (Atividade: Desenvolvimento de Software, Aplicações Web e Serviços Tecnológicos) estão disponíveis em:",
+      "p5_link": "Identidade Legal"
     },
     "privacy": {
       "title": "Política de Privacidade",
       "updated": "Última atualização",
-      "p1_title": "1. Recolha de Informação",
-      "p1_text": "O Bingo Gamer não recolhe, transmite ou armazena quaisquer dados pessoais nos nossos servidores. Todo o progresso do jogo, imagens personalizadas e definições são armazenados localmente no seu dispositivo.",
-      "p2_title": "2. Serviços de Terceiros",
-      "p2_text": "Não integramos serviços de monitorização ou análise de terceiros que recolham as suas informações pessoais.",
-      "p3_title": "3. Os Seus Direitos",
-      "p3_text": "Dado que todos os dados são armazenados localmente no seu navegador, tem controlo total sobre os mesmos. Pode eliminar todos os dados da aplicação limpando os dados do site no seu navegador."
+      "p1_title": "1. Responsável pelo Tratamento",
+      "p1_text": "O Responsável pelo Tratamento é identificado na secção de Aviso Legal.",
+      "p2_title": "2. Dados que Tratamos",
+      "p2_text": "O Bingo Gamer segue uma arquitetura rigorosamente local-first. Todos os dados são armazenados exclusivamente no seu navegador.",
+      "p3_title": "3. Subcontratantes (Terceiros)",
+      "p3_text": "(1) Vercel Inc. — alojamento, processa endereços IP. (2) Lemon Squeezy — processador de pagamentos para doações voluntárias.",
+      "p4_title": "4. Transferências Internacionais",
+      "p4_text": "A Vercel e a Lemon Squeezy operam sob o quadro DPF UE-EUA e/ou Cláusulas Contratuais Tipo (SCCs).",
+      "p5_title": "5. Os Seus Direitos (RGPD)",
+      "p5_text": "Nos termos do RGPD, tem direito de acesso, retificação, apagamento, limitação, portabilidade e oposição. Como todos os dados são locais, exerce estes direitos apagando os dados do site no navegador.",
+      "p6_title": "6. Conservação de Dados",
+      "p6_text": "Os dados locais persistem até à eliminação manual. Os logs do servidor (IPs via Vercel) são conservados até 30 dias."
     },
     "cookies": {
-      "title": "Política de Cookies",
+      "title": "Política de Cookies e Armazenamento",
       "updated": "Última atualização",
       "p1_title": "1. O que são Cookies?",
-      "p1_text": "Os cookies e o armazenamento local são pequenos ficheiros de texto ou dados armazenados no seu dispositivo pelo seu navegador de internet.",
-      "p2_title": "2. Como Utilizamos o Armazenamento Local",
-      "p2_text": "Utilizamos estritamente mecanismos de armazenamento local (como IndexedDB e localStorage) para guardar as configurações dos seus cartões de bingo, preferências de modo claro/escuro e definições de idioma. Não utilizamos cookies de rastreio ou publicidade.",
-      "p3_title": "3. Gestão do Armazenamento",
-      "p3_text": "Pode gerir ou eliminar estas definições guardadas diretamente a partir das definições do seu navegador ou utilizando as funcionalidades de limpeza dentro da aplicação."
+      "p1_text": "Os cookies são pequenos ficheiros de texto. As tecnologias equivalentes (localStorage, IndexedDB) recebem o mesmo tratamento legal.",
+      "p2_title": "2. Tecnologias Utilizadas",
+      "p2_text": "O Bingo Gamer utiliza exclusivamente mecanismos de armazenamento técnico estritamente necessários. Sem cookies de rastreio ou publicidade.",
+      "p3_title": "3. Detalhe do Armazenamento",
+      "p3_text": "localStorage: tema, idioma, consentimento de cookies. IndexedDB: configurações de cartões, logos de eventos, imagens de células. Todos os dados permanecem no dispositivo.",
+      "p4_title": "4. Isenção Legal",
+      "p4_text": "Nos termos do art. 22.2 da LSSI-CE e das diretrizes da AEPD, este site está isento de obter consentimento prévio por utilizar exclusivamente cookies estritamente necessários.",
+      "p5_title": "5. Gestão dos Seus Dados",
+      "p5_text": "Pode eliminar todos os dados armazenados através das definições do navegador ou das funções de limpeza integradas na aplicação."
     },
     "backHome": "Voltar ao início"
   },
   "metadata": {
     "title": "Bingo Gamer",
     "description": "Crie e jogue cartelas de bingo de previsões ao vivo durante eventos de jogos como o Summer Game Fest, Xbox Showcase e Nintendo Direct!"
+  },
+  "donation": {
+    "title": "Apoie o projeto 💖",
+    "description": "Escolha a forma mais confortável de nos apoiar...",
+    "lemonSqueezy": "☕ Me pague um café (Apple/Google Pay, Cartão, PayPal)",
+    "github": "🐙 GitHub Sponsors (Único ou mensal)"
   }
 }

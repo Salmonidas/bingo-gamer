@@ -129,39 +129,60 @@
   },
   "legal": {
     "terms": {
-      "title": "Terms of Service",
+      "title": "Legal Notice",
       "updated": "Last updated",
-      "p1_title": "1. Acceptance of Terms",
-      "p1_text": "By accessing and using Bingo Gamer, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
-      "p2_title": "2. Description of Service",
-      "p2_text": "Bingo Gamer provides an interactive web-based bingo application for gaming events. The service is provided 'as is' without warranties of any kind.",
-      "p3_title": "3. User Conduct",
-      "p3_text": "You agree not to use the service for any unlawful purpose or in any way that interrupts, damages, or impairs the service."
+      "p1_title": "1. Purpose",
+      "p1_text": "This Legal Notice regulates access to and use of the website Bingo Gamer (hereinafter, \"the Website\"), hosted at bingo-gamer.vercel.app. The use of this Website implies acceptance of all conditions included in this notice.",
+      "p2_title": "2. Intellectual Property",
+      "p2_text": "The source code of this project is licensed under AGPL-3.0. All content, designs, logos, and graphic elements are the property of their respective authors. The reproduction, distribution, or transformation of this content without express authorization is prohibited, except as permitted by the AGPL-3.0 license.",
+      "p3_title": "3. Limitation of Liability",
+      "p3_text": "The owner is not responsible for damages derived from the use of the Website, including errors, interruptions, or loss of data stored locally in the user's browser. The service is provided \"as is\" without warranties of any kind.",
+      "p4_title": "4. Applicable Law and Jurisdiction",
+      "p4_text": "This Legal Notice is governed by Spanish law. For the resolution of any dispute, the courts and tribunals of the owner's domicile shall be competent, unless otherwise provided by law.",
+      "p5_title": "5. Owner Identity",
+      "p5_text": "The owner operates under a Centralized Legal Identity model. Registry and tax data (Activity: Software Development, Web Applications and Technology Services) are available at:",
+      "p5_link": "Legal Identity"
     },
     "privacy": {
       "title": "Privacy Policy",
       "updated": "Last updated",
-      "p1_title": "1. Information Collection",
-      "p1_text": "Bingo Gamer does not collect, transmit, or store any personal data on our servers. All game progress, custom images, and settings are stored locally on your device.",
-      "p2_title": "2. Third-Party Services",
-      "p2_text": "We do not integrate with third-party tracking or analytics services that collect your personal information.",
-      "p3_title": "3. Your Rights",
-      "p3_text": "Since all data is stored locally in your browser, you have complete control over it. You can delete all application data by clearing your browser's site data."
+      "p1_title": "1. Data Controller",
+      "p1_text": "The Data Controller of this website is identified in the Legal Notice section. You can consult the full owner identity at the Centralized Legal Identity link provided therein.",
+      "p2_title": "2. Data We Process",
+      "p2_text": "Bingo Gamer follows a strict local-first architecture. All your bingo cards, custom images, logos, visual preferences (dark/light mode), and language settings are stored exclusively in your browser using IndexedDB and localStorage. We do not collect, transmit, or store personal data on our servers.",
+      "p3_title": "3. Third-Party Data Processors",
+      "p3_text": "The following third parties may process limited data as part of the service infrastructure: (1) Vercel Inc. — hosting provider that processes IP addresses for security and content delivery under the EU-US Data Privacy Framework (DPF). (2) Lemon Squeezy — payment processor for voluntary donations, which processes payment data under its own privacy policy and PCI DSS compliance.",
+      "p4_title": "4. International Transfers",
+      "p4_text": "Vercel Inc. and Lemon Squeezy are US-based companies. Both operate under the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs), ensuring an adequate level of data protection as required by GDPR.",
+      "p5_title": "5. Your Rights (ARSULIPO)",
+      "p5_text": "Under the GDPR (EU Regulation 2016/679), you have the right to Access, Rectification, Suppression, Limitation, Portability, and Opposition (ARSULIPO) regarding your personal data. Since all user data is stored locally in your browser, you exercise these rights directly by clearing your browser's site data. For any request related to data processed by third parties (Vercel, Lemon Squeezy), please contact the owner via the email in the Legal Identity.",
+      "p6_title": "6. Data Retention",
+      "p6_text": "Data stored locally in your browser persists until you manually clear it. Server-side logs (IP addresses processed by Vercel) are retained according to Vercel's data retention policy (typically up to 30 days)."
     },
     "cookies": {
-      "title": "Cookies Policy",
+      "title": "Cookie and Storage Policy",
       "updated": "Last updated",
-      "p1_title": "1. What are Cookies?",
-      "p1_text": "Cookies and local storage are small text files or data stored on your device by your web browser.",
-      "p2_title": "2. How We Use Local Storage",
-      "p2_text": "We strictly use local storage mechanisms (like IndexedDB and localStorage) to save your bingo card configurations, dark/light mode preferences, and language settings. We do not use tracking or advertising cookies.",
-      "p3_title": "3. Managing Storage",
-      "p3_text": "You can manage or delete these stored settings directly from your browser's settings or by using the clear features within the application."
+      "p1_title": "1. What Are Cookies and Equivalent Technologies?",
+      "p1_text": "Cookies are small text files stored on your device. Under AEPD (Spanish Data Protection Agency) guidelines, equivalent technologies such as localStorage, sessionStorage, and IndexedDB receive the same legal treatment.",
+      "p2_title": "2. Technologies We Use",
+      "p2_text": "Bingo Gamer uses exclusively technical/strictly necessary storage mechanisms for the application to function correctly. No tracking, advertising, or analytics cookies or scripts are used.",
+      "p3_title": "3. Storage Detail Table",
+      "p3_text": "localStorage: stores theme preference (dark/light), language selection, cookie consent acknowledgment, and support toast dismissal state. IndexedDB (via 'idb' library): stores bingo card configurations, custom event logos (as Base64/Blobs), and cell background images. All data remains exclusively on the user's device.",
+      "p4_title": "4. Legal Exemption Notice",
+      "p4_text": "In accordance with Article 22.2 of the LSSI-CE (Ley 34/2002) and the AEPD guidelines on cookies, this website is exempt from obtaining prior consent for the use of cookies or equivalent storage technologies, as it exclusively uses those that are strictly necessary for the provision of the service expressly requested by the user. No interactive consent panel is required.",
+      "p5_title": "5. Managing Your Data",
+      "p5_text": "You can delete all stored data at any time through your browser's settings (Clear Site Data) or by using the in-app clear features. This will reset your bingo cards, preferences, and visual customizations."
     },
     "backHome": "Back to home"
   },
   "metadata": {
     "title": "Bingo Gamer",
     "description": "Create and play prediction bingo cards live during gaming events like Summer Game Fest, Xbox Showcase and Nintendo Direct!"
+  },
+  "donation": {
+    "title": "Support the project 💖",
+    "description": "Choose the most comfortable way to support us...",
+    "lemonSqueezy": "☕ Buy me a coffee (Apple/Google Pay, Card, PayPal)",
+    "github": "🐙 GitHub Sponsors (One-time or monthly)"
   }
 }

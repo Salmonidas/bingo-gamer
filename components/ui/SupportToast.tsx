@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import DonationModal from '@/components/ui/DonationModal';
 
 export default function SupportToast() {
   const t = useTranslations('supportToast');
   const footerT = useTranslations('footer');
   const [show, setShow] = useState(false);
-  const [showDonationAlert, setShowDonationAlert] = useState(false);
-  const [isCheckingSponsor, setIsCheckingSponsor] = useState(false);
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
 
   useEffect(() => {
     const isDismissed = localStorage.getItem('bingo_support_dismissed');
@@ -26,32 +26,9 @@ export default function SupportToast() {
     setShow(false);
   };
 
-  const handleDonateClick = async (e: React.MouseEvent) => {
+  const handleDonateClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (isCheckingSponsor) return;
-    
-    setIsCheckingSponsor(true);
-    const GITHUB_USER = "Salmonidas";
-    const SPONSORS_URL = `https://github.com/sponsors/${GITHUB_USER}`;
-
-    try {
-      const res = await fetch(`https://api.github.com/users/${GITHUB_USER}`, {
-        headers: { 'Accept': 'application/vnd.github+json' }
-      });
-      const data = await res.json();
-
-      if (data.has_sponsors_listing) {
-        window.open(SPONSORS_URL, '_blank');
-      } else {
-        setShowDonationAlert(true);
-        setTimeout(() => setShowDonationAlert(false), 5000);
-      }
-    } catch (_) {
-      setShowDonationAlert(true);
-      setTimeout(() => setShowDonationAlert(false), 5000);
-    } finally {
-      setIsCheckingSponsor(false);
-    }
+    setIsDonationModalOpen(true);
   };
 
   return (
@@ -116,8 +93,7 @@ export default function SupportToast() {
                       display: 'block',
                       padding: '10px',
                       fontSize: '0.95rem',
-                      opacity: isCheckingSponsor ? 0.7 : 1,
-                      cursor: isCheckingSponsor ? 'wait' : 'pointer'
+                      cursor: 'pointer'
                     }}
                   >
                     {t('donateAction')}
@@ -143,34 +119,10 @@ export default function SupportToast() {
         )}
       </AnimatePresence>
 
-      <AnimatePresence>
-        {showDonationAlert && (
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            style={{
-              position: 'fixed',
-              bottom: '90px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              background: 'var(--bg-surface-nested)',
-              border: '1px solid var(--border-light)',
-              padding: '16px 24px',
-              borderRadius: '16px',
-              boxShadow: 'var(--shadow-diffused)',
-              zIndex: 10000,
-              maxWidth: '400px',
-              textAlign: 'center',
-              color: 'var(--text-primary)'
-            }}
-          >
-            <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: '1.5' }}>
-              {footerT('donationPaused')}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <DonationModal 
+        show={isDonationModalOpen} 
+        onClose={() => setIsDonationModalOpen(false)} 
+      />
     </>
   );
 }

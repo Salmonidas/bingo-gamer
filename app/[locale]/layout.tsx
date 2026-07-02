@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { UserProvider } from '@/components/providers/UserProvider';
 import Footer from '@/components/layout/Footer';
@@ -22,6 +23,12 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
     title: t('title'),
     description: t('description'),
     metadataBase: new URL('https://bingo-gamer.vercel.app'),
+    manifest: '/manifest.json',
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'default',
+      title: 'Bingo Gamer',
+    },
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -85,6 +92,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
+        <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <UserProvider>
@@ -102,4 +110,16 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       </body>
     </html>
   );
+}
+
+declare global {
+  interface Window {
+    createLemonSqueezy: () => void;
+    LemonSqueezy: {
+      Setup: (options: { eventHandler?: (event: unknown) => void }) => void;
+      Refresh: () => void;
+      Url: { Open: (url: string) => void; Close: () => void; };
+      Affiliate: { GetID: () => string | null; Build: (url: string) => string; };
+    };
+  }
 }

@@ -129,39 +129,60 @@
   },
   "legal": {
     "terms": {
-      "title": "Termini di Servizio",
+      "title": "Avviso Legale",
       "updated": "Ultimo aggiornamento",
-      "p1_title": "1. Accettazione dei Termini",
-      "p1_text": "Accedendo e utilizzando Bingo Gamer, accetti di essere vincolato dai termini e dalle disposizioni di questo accordo. Se non accetti di rispettare quanto sopra, ti preghiamo di non utilizzare questo servizio.",
-      "p2_title": "2. Descrizione del Servizio",
-      "p2_text": "Bingo Gamer fornisce un'applicazione interattiva di bingo online per eventi di gioco. Il servizio è fornito \"così com'è\", senza garanzie di alcun tipo.",
-      "p3_title": "3. Condotta dell'Utente",
-      "p3_text": "Accetti di non utilizzare il servizio per scopi illeciti o in modi che possano interrompere, danneggiare o compromettere il servizio stesso."
+      "p1_title": "1. Oggetto",
+      "p1_text": "Il presente Avviso Legale regola l\\'accesso e l\\'uso del sito web Bingo Gamer, ospitato su bingo-gamer.vercel.app.",
+      "p2_title": "2. Proprietà Intellettuale",
+      "p2_text": "Il codice sorgente di questo progetto è concesso in licenza sotto AGPL-3.0. Tutti i contenuti sono di proprietà dei rispettivi autori.",
+      "p3_title": "3. Limitazione di Responsabilità",
+      "p3_text": "Il titolare non è responsabile dei danni derivanti dall\\'uso del Sito Web. Il servizio è fornito \"così com\\'è\" senza garanzie.",
+      "p4_title": "4. Legge Applicabile",
+      "p4_text": "Il presente Avviso Legale è regolato dalla legge spagnola.",
+      "p5_title": "5. Identità del Titolare",
+      "p5_text": "Il titolare opera con un modello di Identità Legale Centralizzata. I dati registrali e fiscali (Attività: Sviluppo Software, Applicazioni Web e Servizi Tecnologici) sono disponibili su:",
+      "p5_link": "Identità Legale"
     },
     "privacy": {
       "title": "Informativa sulla Privacy",
       "updated": "Ultimo aggiornamento",
-      "p1_title": "1. Raccolta delle Informazioni",
-      "p1_text": "Bingo Gamer non raccoglie, trasmette o memorizza dati personali sui nostri server. Tutti i progressi di gioco, le immagini personalizzate e le impostazioni sono salvati localmente sul tuo dispositivo.",
-      "p2_title": "2. Servizi di Terze Parti",
-      "p2_text": "Non integriamo servizi di tracciamento o analisi di terze parti che raccolgono le tue informazioni personali.",
-      "p3_title": "3. I Tuoi Diritti",
-      "p3_text": "Poiché tutti i dati sono memorizzati localmente nel tuo browser, ne hai il controllo completo. Puoi eliminare tutti i dati dell'applicazione cancellando i dati del sito del tuo browser."
+      "p1_title": "1. Titolare del Trattamento",
+      "p1_text": "Il Titolare del Trattamento è identificato nella sezione Avviso Legale.",
+      "p2_title": "2. Dati Trattati",
+      "p2_text": "Bingo Gamer segue un\\'architettura rigorosamente local-first. Tutti i dati sono memorizzati esclusivamente nel browser.",
+      "p3_title": "3. Responsabili del Trattamento (Terzi)",
+      "p3_text": "(1) Vercel Inc. — hosting, elabora indirizzi IP. (2) Lemon Squeezy — processore di pagamenti per donazioni volontarie.",
+      "p4_title": "4. Trasferimenti Internazionali",
+      "p4_text": "Vercel e Lemon Squeezy operano sotto il quadro DPF UE-USA e/o Clausole Contrattuali Standard (SCCs).",
+      "p5_title": "5. I Tuoi Diritti (GDPR)",
+      "p5_text": "Ai sensi del GDPR, hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Poiché tutti i dati sono locali, eserciti questi diritti cancellando i dati del sito nel browser.",
+      "p6_title": "6. Conservazione dei Dati",
+      "p6_text": "I dati locali persistono fino alla cancellazione manuale. I log del server (IP via Vercel) sono conservati fino a 30 giorni."
     },
     "cookies": {
-      "title": "Informativa sui Cookie",
+      "title": "Politica sui Cookie e Archiviazione",
       "updated": "Ultimo aggiornamento",
       "p1_title": "1. Cosa sono i Cookie?",
-      "p1_text": "I cookie e l'archiviazione locale sono piccoli file di testo o dati memorizzati sul tuo dispositivo dal tuo browser web.",
-      "p2_title": "2. Come Utilizziamo l'Archiviazione Locale",
-      "p2_text": "Utilizziamo esclusivamente meccanismi di archiviazione locale (come IndexedDB e localStorage) per salvare le configurazioni delle tue cartelle di bingo, le preferenze per la modalità chiara/scura e le impostazioni della lingua. Non utilizziamo cookie di tracciamento o pubblicitari.",
-      "p3_title": "3. Gestione dell'Archiviazione",
-      "p3_text": "Puoi gestire o eliminare queste impostazioni salvate direttamente dalle impostazioni del tuo browser o utilizzando le funzioni di cancellazione all'interno dell'applicazione."
+      "p1_text": "I cookie sono piccoli file di testo. Le tecnologie equivalenti (localStorage, IndexedDB) ricevono lo stesso trattamento legale.",
+      "p2_title": "2. Tecnologie Utilizzate",
+      "p2_text": "Bingo Gamer utilizza esclusivamente meccanismi di archiviazione tecnica strettamente necessari. Nessun cookie di tracciamento o pubblicitario.",
+      "p3_title": "3. Dettaglio dell\\'Archiviazione",
+      "p3_text": "localStorage: tema, lingua, consenso cookie. IndexedDB: configurazioni carte bingo, loghi eventi, immagini celle. Tutti i dati restano sul dispositivo.",
+      "p4_title": "4. Esenzione Legale",
+      "p4_text": "Ai sensi dell\\'art. 22.2 LSSI-CE e delle linee guida AEPD, questo sito è esente dall\\'ottenimento del consenso preventivo poiché utilizza esclusivamente cookie strettamente necessari.",
+      "p5_title": "5. Gestione dei Dati",
+      "p5_text": "Puoi eliminare tutti i dati memorizzati tramite le impostazioni del browser o le funzioni di pulizia integrate nell\\'applicazione."
     },
     "backHome": "Torna alla home"
   },
   "metadata": {
     "title": "Bingo Gamer",
     "description": "Crea e gioca con le cartelle del bingo delle previsioni in diretta durante gli eventi di gioco come il Summer Game Fest, l'Xbox Showcase e il Nintendo Direct!"
+  },
+  "donation": {
+    "title": "Supporta il progetto 💖",
+    "description": "Scegli il modo più comodo per supportarci...",
+    "lemonSqueezy": "☕ Offrimi un caffè (Apple/Google Pay, Carta, PayPal)",
+    "github": "🐙 GitHub Sponsors (Una tantum o mensile)"
   }
 }

@@ -129,39 +129,60 @@
   },
   "legal": {
     "terms": {
-      "title": "Conditions d'utilisation",
+      "title": "Mentions Légales",
       "updated": "Dernière mise à jour",
-      "p1_title": "1. Acceptation des conditions",
-      "p1_text": "En accédant et en utilisant Bingo Gamer, vous acceptez d'être lié par les termes et dispositions de cet accord. Si vous n'acceptez pas de respecter ce qui précède, veuillez ne pas utiliser ce service.",
-      "p2_title": "2. Description du service",
-      "p2_text": "Bingo Gamer fournit une application de bingo interactive en ligne pour les événements de jeux vidéo. Le service est fourni « tel quel » sans garantie d'aucune sorte.",
-      "p3_title": "3. Conduite de l'utilisateur",
-      "p3_text": "Vous acceptez de ne pas utiliser le service à des fins illégales ou d'une manière qui interrompt, endommage ou altère le service."
+      "p1_title": "1. Objet",
+      "p1_text": "Les présentes Mentions Légales régissent l\\'accès et l\\'utilisation du site web Bingo Gamer (ci-après, \"le Site Web\"), hébergé sur bingo-gamer.vercel.app.",
+      "p2_title": "2. Propriété Intellectuelle",
+      "p2_text": "Le code source de ce projet est sous licence AGPL-3.0. Tout le contenu, les designs, logos et éléments graphiques sont la propriété de leurs auteurs respectifs.",
+      "p3_title": "3. Limitation de Responsabilité",
+      "p3_text": "Le titulaire n\\'est pas responsable des dommages résultant de l\\'utilisation du Site Web. Le service est fourni \"tel quel\" sans garantie d\\'aucune sorte.",
+      "p4_title": "4. Droit Applicable",
+      "p4_text": "Les présentes Mentions Légales sont régies par le droit espagnol.",
+      "p5_title": "5. Identité du Titulaire",
+      "p5_text": "Le titulaire opère sous un modèle d\\'Identité Légale Centralisée. Les données registrales et fiscales (Activité : Développement de Logiciels, Applications Web et Services Technologiques) sont disponibles sur :",
+      "p5_link": "Identité Légale"
     },
     "privacy": {
-      "title": "Politique de confidentialité",
+      "title": "Politique de Confidentialité",
       "updated": "Dernière mise à jour",
-      "p1_title": "1. Collecte d'informations",
-      "p1_text": "Bingo Gamer ne collecte, ne transmet et ne stocke aucune donnée personnelle sur nos serveurs. Toute la progression du jeu, les images personnalisées et les paramètres sont stockés localement sur votre appareil.",
-      "p2_title": "2. Services tiers",
-      "p2_text": "Nous ne l'intégrons pas à des services de suivi ou d'analyse tiers qui collectent vos informations personnelles.",
-      "p3_title": "3. Vos droits",
-      "p3_text": "Puisque toutes les données sont stockées localement dans votre navigateur, vous en avez le contrôle total. Vous pouvez supprimer toutes les données de l'application en effaçant les données de site de votre navigateur."
+      "p1_title": "1. Responsable du Traitement",
+      "p1_text": "Le Responsable du Traitement de ce site est identifié dans la section Mentions Légales.",
+      "p2_title": "2. Données que Nous Traitons",
+      "p2_text": "Bingo Gamer suit une architecture strictement local-first. Toutes vos cartes de bingo, images et préférences sont stockées exclusivement dans votre navigateur via IndexedDB et localStorage.",
+      "p3_title": "3. Sous-traitants (Tiers)",
+      "p3_text": "Les tiers suivants peuvent traiter des données limitées : (1) Vercel Inc. — hébergeur traitant les adresses IP. (2) Lemon Squeezy — processeur de paiements pour les dons volontaires.",
+      "p4_title": "4. Transferts Internationaux",
+      "p4_text": "Vercel Inc. et Lemon Squeezy sont des entreprises américaines opérant sous le cadre DPF UE-US et/ou les Clauses Contractuelles Types (SCCs).",
+      "p5_title": "5. Vos Droits (RGPD)",
+      "p5_text": "Conformément au RGPD, vous disposez des droits d\\'accès, de rectification, de suppression, de limitation, de portabilité et d\\'opposition. Toutes les données utilisateur étant stockées localement, vous exercez ces droits en effaçant les données du site dans votre navigateur.",
+      "p6_title": "6. Conservation des Données",
+      "p6_text": "Les données locales persistent jusqu\\'à leur suppression manuelle. Les logs serveur (IP via Vercel) sont conservés jusqu\\'à 30 jours."
     },
     "cookies": {
-      "title": "Politique de cookies",
+      "title": "Politique de Cookies et Stockage",
       "updated": "Dernière mise à jour",
-      "p1_title": "1. Que sont les cookies ?",
-      "p1_text": "Les cookies et le stockage local sont de petits fichiers texte ou des données stockées sur votre appareil par votre navigateur web.",
-      "p2_title": "2. Comment nous utilisons le stockage local",
-      "p2_text": "Nous utilisons strictement des mécanismes de stockage local (comme IndexedDB et localStorage) pour enregistrer les configurations de vos cartons de bingo, vos préférences de mode sombre/clair et vos paramètres de langue. Nous n'utilisons pas de cookies de suivi ou publicitaires.",
-      "p3_title": "3. Gestion du stockage",
-      "p3_text": "Vous pouvez gérer ou supprimer ces paramètres stockés directement depuis les paramètres de votre navigateur ou en utilisant les fonctionnalités d'effacement de l'application."
+      "p1_title": "1. Que sont les Cookies ?",
+      "p1_text": "Les cookies sont de petits fichiers texte stockés sur votre appareil. Les technologies équivalentes (localStorage, IndexedDB) reçoivent le même traitement légal.",
+      "p2_title": "2. Technologies Utilisées",
+      "p2_text": "Bingo Gamer utilise exclusivement des mécanismes de stockage technique strictement nécessaires. Aucun cookie de suivi ou publicitaire n\\'est utilisé.",
+      "p3_title": "3. Détail du Stockage",
+      "p3_text": "localStorage : thème, langue, consentement cookies, état du toast de support. IndexedDB : configurations des cartes de bingo, logos d\\'événements, images de cellules. Toutes les données restent sur votre appareil.",
+      "p4_title": "4. Exemption Légale",
+      "p4_text": "Conformément à l\\'article 22.2 de la LSSI-CE et aux directives de l\\'AEPD, ce site est exempté de l\\'obtention du consentement préalable car il n\\'utilise que des cookies strictement nécessaires.",
+      "p5_title": "5. Gestion de vos Données",
+      "p5_text": "Vous pouvez supprimer toutes les données stockées via les paramètres de votre navigateur ou les fonctions de nettoyage intégrées."
     },
-    "backHome": "Retour à l'accueil"
+    "backHome": "Retour à l\\'accueil"
   },
   "metadata": {
     "title": "Bingo Gamer",
     "description": "Créez et jouez à des cartons de bingo de prédictions en direct lors d'événements de jeux vidéo comme le Summer Game Fest, l'Xbox Showcase et le Nintendo Direct !"
+  },
+  "donation": {
+    "title": "Soutenez le projet 💖",
+    "description": "Choisissez le moyen qui vous convient le mieux...",
+    "lemonSqueezy": "☕ Offrez-moi un café (Apple/Google Pay, Carte, PayPal)",
+    "github": "🐙 GitHub Sponsors (Ponctuel ou mensuel)"
   }
 }
