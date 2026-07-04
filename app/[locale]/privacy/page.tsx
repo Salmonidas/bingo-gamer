@@ -27,6 +27,17 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
         
         <h2 style={{ color: 'var(--text-primary)', marginTop: '32px', marginBottom: '16px' }}>{t('p1_title')}</h2>
         <p>{t('p1_text')}</p>
+        <p style={{ marginTop: '12px' }}>
+          <a 
+            href="https://salmonidas-dev.vercel.app/legal-identity" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="interactive-pill interactive-pill-primary"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none', padding: '10px 20px' }}
+          >
+            🔗 {t('p1_link')}
+          </a>
+        </p>
         
         <h2 style={{ color: 'var(--text-primary)', marginTop: '32px', marginBottom: '16px' }}>{t('p2_title')}</h2>
         <p>{t('p2_text')}</p>

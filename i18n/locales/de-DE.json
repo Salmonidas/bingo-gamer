@@ -125,7 +125,10 @@
     "title": "Entwicklung unterstützen",
     "description": "Wenn Ihnen Bingo Gamer gefällt, unterstützen Sie den Entwickler gerne mit einem Kaffee!",
     "donateAction": "☕ Einen Kaffee spendieren",
-    "dismiss": "Nicht mehr anzeigen"
+    "dismiss": "Nicht mehr anzeigen",
+    "farewellTitle": "Danke! 💙",
+    "farewellText": "Kein Problem! Falls du irgendwann die Entwicklung dieser kostenlosen Projekte unterstützen möchtest, findest du den \"Spenden\"-Button immer oben und unten auf der Seite.",
+    "farewellClose": "Verstanden!"
   },
   "legal": {
     "terms": {
@@ -147,17 +150,18 @@
       "title": "Datenschutzerklärung",
       "updated": "Letzte Aktualisierung",
       "p1_title": "1. Verantwortlicher",
-      "p1_text": "Der Verantwortliche dieser Website ist im Impressum identifiziert.",
+      "p1_text": "Der Verantwortliche dieser Website ist im Impressum identifiziert. Die vollständige Identität des Inhabers können Sie direkt einsehen unter:",
       "p2_title": "2. Verarbeitete Daten",
       "p2_text": "Bingo Gamer folgt einer strikten Local-First-Architektur. Alle Daten werden ausschließlich in Ihrem Browser gespeichert.",
       "p3_title": "3. Auftragsverarbeiter (Dritte)",
-      "p3_text": "(1) Vercel Inc. — Hosting-Anbieter, der IP-Adressen verarbeitet. (2) Lemon Squeezy — Zahlungsabwickler für freiwillige Spenden.",
+      "p3_text": "(1) Vercel Inc. — Hosting-Anbieter, der IP-Adressen verarbeitet. (2) Lemon Squeezy — Zahlungsabwickler für freiwillige Spenden. Diese Website erfasst, speichert oder hat zu keinem Zeitpunkt Zugang zu Zahlungskarteninformationen.",
       "p4_title": "4. Internationale Übermittlungen",
       "p4_text": "Vercel und Lemon Squeezy sind US-Unternehmen, die unter dem EU-US-Datenschutzrahmen (DPF) operieren.",
       "p5_title": "5. Ihre Rechte (DSGVO)",
       "p5_text": "Gemäß der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, üben Sie diese Rechte durch Löschen der Website-Daten in Ihrem Browser aus.",
       "p6_title": "6. Datenspeicherung",
-      "p6_text": "Lokale Daten bestehen bis zur manuellen Löschung. Server-Logs (IPs über Vercel) werden bis zu 30 Tage aufbewahrt."
+      "p6_text": "Lokale Daten bestehen bis zur manuellen Löschung. Server-Logs (IPs über Vercel) werden bis zu 30 Tage aufbewahrt.",
+      "p1_link": "Rechtliche Identität"
     },
     "cookies": {
       "title": "Cookie- und Speicherrichtlinie",

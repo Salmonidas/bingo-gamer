@@ -125,7 +125,10 @@
     "title": "Support Development",
     "description": "If you enjoy using Bingo Gamer, please consider supporting the developer with a coffee!",
     "donateAction": "☕ Buy me a coffee",
-    "dismiss": "Don't show this again"
+    "dismiss": "Don't show this again",
+    "farewellTitle": "Thank you! 💙",
+    "farewellText": "No worries at all! If you ever feel like supporting the development of these free projects, you'll always find the \"Donate\" button at the top and bottom of the page.",
+    "farewellClose": "Got it!"
   },
   "legal": {
     "terms": {
@@ -147,17 +150,18 @@
       "title": "Privacy Policy",
       "updated": "Last updated",
       "p1_title": "1. Data Controller",
-      "p1_text": "The Data Controller of this website is identified in the Legal Notice section. You can consult the full owner identity at the Centralized Legal Identity link provided therein.",
+      "p1_text": "The Data Controller of this website is identified in the Legal Notice section. You can consult the full owner identity directly at:",
       "p2_title": "2. Data We Process",
       "p2_text": "Bingo Gamer follows a strict local-first architecture. All your bingo cards, custom images, logos, visual preferences (dark/light mode), and language settings are stored exclusively in your browser using IndexedDB and localStorage. We do not collect, transmit, or store personal data on our servers.",
       "p3_title": "3. Third-Party Data Processors",
-      "p3_text": "The following third parties may process limited data as part of the service infrastructure: (1) Vercel Inc. — hosting provider that processes IP addresses for security and content delivery under the EU-US Data Privacy Framework (DPF). (2) Lemon Squeezy — payment processor for voluntary donations, which processes payment data under its own privacy policy and PCI DSS compliance.",
+      "p3_text": "The following third parties may process limited data as part of the service infrastructure: (1) Vercel Inc. — hosting provider that processes IP addresses for security and content delivery under the EU-US Data Privacy Framework (DPF). (2) Lemon Squeezy — payment processor for voluntary donations. Lemon Squeezy processes all payment data (credit card, billing address) independently under its own privacy policy and PCI DSS compliance. This website does NOT collect, store, or have access to any payment card information at any time.",
       "p4_title": "4. International Transfers",
       "p4_text": "Vercel Inc. and Lemon Squeezy are US-based companies. Both operate under the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs), ensuring an adequate level of data protection as required by GDPR.",
       "p5_title": "5. Your Rights (ARSULIPO)",
       "p5_text": "Under the GDPR (EU Regulation 2016/679), you have the right to Access, Rectification, Suppression, Limitation, Portability, and Opposition (ARSULIPO) regarding your personal data. Since all user data is stored locally in your browser, you exercise these rights directly by clearing your browser's site data. For any request related to data processed by third parties (Vercel, Lemon Squeezy), please contact the owner via the email in the Legal Identity.",
       "p6_title": "6. Data Retention",
-      "p6_text": "Data stored locally in your browser persists until you manually clear it. Server-side logs (IP addresses processed by Vercel) are retained according to Vercel's data retention policy (typically up to 30 days)."
+      "p6_text": "Data stored locally in your browser persists until you manually clear it. Server-side logs (IP addresses processed by Vercel) are retained according to Vercel's data retention policy (typically up to 30 days).",
+      "p1_link": "Legal Identity"
     },
     "cookies": {
       "title": "Cookie and Storage Policy",

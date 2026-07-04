@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 
+import { locales } from '../middleware';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bingo-gamer.vercel.app';
-  const locales = ['en', 'es', 'fr', 'de', 'ja', 'zh', 'it', 'pt'];
 
   const localeRoutes: MetadataRoute.Sitemap = locales.map((locale) => ({
     url: `${baseUrl}/${locale}`,

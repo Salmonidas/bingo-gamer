@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import DonationModal from '@/components/ui/DonationModal';
 
@@ -86,17 +87,15 @@ export default function Footer() {
                 e.currentTarget.style.transform = 'scale(1)';
               }}
             >
-              <img 
+              <Image 
                 src="https://salmonidas-dev.vercel.app/logo.webp" 
                 alt="Salmónidas Logo" 
+                width={16}
+                height={16}
+                unoptimized
                 style={{
-                  width: '16px',
-                  height: '16px',
                   borderRadius: '50%',
                   objectFit: 'cover'
-                }}
-                onError={(e) => {
-                  e.currentTarget.src = "https://salmonidas-dev.vercel.app/icon.png";
                 }}
               />
               <span>Salmónidas</span>

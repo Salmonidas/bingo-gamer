@@ -7,8 +7,8 @@ import DonationModal from '@/components/ui/DonationModal';
 
 export default function SupportToast() {
   const t = useTranslations('supportToast');
-  const footerT = useTranslations('footer');
   const [show, setShow] = useState(false);
+  const [showFarewell, setShowFarewell] = useState(false);
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
 
   useEffect(() => {
@@ -16,13 +16,18 @@ export default function SupportToast() {
     if (!isDismissed) {
       const timer = setTimeout(() => {
         setShow(true);
-      }, 5000); // 5 seconds delay
+      }, 5000);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const handleDismiss = () => {
+    setShowFarewell(true);
+  };
+
+  const handleFarewellClose = () => {
     localStorage.setItem('bingo_support_dismissed', 'true');
+    setShowFarewell(false);
     setShow(false);
   };
 
@@ -34,7 +39,7 @@ export default function SupportToast() {
   return (
     <>
       <AnimatePresence>
-        {show && (
+        {show && !showFarewell && (
           <motion.div
             initial={{ opacity: 0, y: 50, x: '-50%' }}
             animate={{ opacity: 1, y: 0, x: '-50%' }}
@@ -119,6 +124,51 @@ export default function SupportToast() {
         )}
       </AnimatePresence>
 
+      <AnimatePresence>
+        {showFarewell && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, x: '-50%' }}
+            animate={{ opacity: 1, y: 0, x: '-50%' }}
+            exit={{ opacity: 0, y: 50, x: '-50%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            style={{
+              position: 'fixed',
+              bottom: '88px',
+              left: '50%',
+              zIndex: 9999,
+              width: '90%',
+              maxWidth: '460px'
+            }}
+          >
+            <div className="double-bezel-outer" style={{ padding: '4px' }}>
+              <div className="double-bezel-inner" style={{
+                background: 'var(--bg-surface)',
+                padding: '20px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px',
+                textAlign: 'center',
+                boxShadow: 'var(--shadow-diffused)'
+              }}>
+                <h3 style={{ margin: 0, fontSize: '1rem', color: 'var(--text-primary)', fontWeight: 600 }}>
+                  {t('farewellTitle')}
+                </h3>
+                <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                  {t('farewellText')}
+                </p>
+                <button
+                  onClick={handleFarewellClose}
+                  className="interactive-pill interactive-pill-primary"
+                  style={{ padding: '10px', fontSize: '0.95rem', marginTop: '4px' }}
+                >
+                  {t('farewellClose')}
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <DonationModal 
         show={isDonationModalOpen} 
         onClose={() => setIsDonationModalOpen(false)} 
@@ -126,3 +176,4 @@ export default function SupportToast() {
     </>
   );
 }
+

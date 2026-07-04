@@ -125,7 +125,10 @@
     "title": "Apoya el Desarrollo",
     "description": "Si te resulta útil Bingo Gamer, ¡considera invitar al desarrollador a un café!",
     "donateAction": "☕ Invítame a un café",
-    "dismiss": "No volver a mostrar"
+    "dismiss": "No volver a mostrar",
+    "farewellTitle": "¡Gracias! 💙",
+    "farewellText": "¡Sin problema! Si en algún momento consideras apoyar el desarrollo de estos proyectos gratuitos, siempre encontrarás el botón \"Donar\" en la parte superior e inferior de la web.",
+    "farewellClose": "¡Entendido!"
   },
   "legal": {
     "terms": {
@@ -147,17 +150,18 @@
       "title": "Política de Privacidad",
       "updated": "Última actualización",
       "p1_title": "1. Responsable del Tratamiento",
-      "p1_text": "El Responsable del Tratamiento de este sitio web se identifica en la sección de Aviso Legal. Puede consultar la identidad completa del titular en el enlace de Identidad Legal Centralizada allí proporcionado.",
+      "p1_text": "El Responsable del Tratamiento de este sitio web se identifica en la sección de Aviso Legal. Puede consultar la identidad completa del titular directamente en:",
       "p2_title": "2. Datos que Tratamos",
       "p2_text": "Bingo Gamer sigue una arquitectura estrictamente local-first. Todos tus cartones de bingo, imágenes personalizadas, logotipos, preferencias visuales (modo oscuro/claro) y ajustes de idioma se almacenan exclusivamente en tu navegador mediante IndexedDB y localStorage. No recopilamos, transmitimos ni almacenamos datos personales en nuestros servidores.",
       "p3_title": "3. Encargados del Tratamiento (Terceros)",
-      "p3_text": "Los siguientes terceros pueden tratar datos limitados como parte de la infraestructura del servicio: (1) Vercel Inc. — proveedor de hosting que procesa direcciones IP para seguridad y distribución de contenido bajo el Marco de Privacidad de Datos UE-EE.UU. (DPF). (2) Lemon Squeezy — procesador de pagos para donaciones voluntarias, que trata datos de pago bajo su propia política de privacidad y cumplimiento PCI DSS.",
+      "p3_text": "Los siguientes terceros pueden procesar datos limitados como parte de la infraestructura del servicio: (1) Vercel Inc. — proveedor de alojamiento que procesa direcciones IP para seguridad y distribución de contenido bajo el Marco de Privacidad de Datos UE-EE. UU. (DPF). (2) Lemon Squeezy — procesador de pagos para donaciones voluntarias. Lemon Squeezy procesa todos los datos de pago (tarjeta de crédito, dirección de facturación) de forma independiente bajo su propia política de privacidad y cumplimiento PCI DSS. Este sitio web NO recopila, almacena ni tiene acceso a ninguna información de tarjetas de pago en ningún momento.",
       "p4_title": "4. Transferencias Internacionales",
       "p4_text": "Vercel Inc. y Lemon Squeezy son empresas con sede en EE.UU. Ambas operan bajo el Marco de Privacidad de Datos UE-EE.UU. (DPF) y/o Cláusulas Contractuales Tipo (SCCs), garantizando un nivel adecuado de protección de datos según el RGPD.",
       "p5_title": "5. Tus Derechos (ARSULIPO)",
       "p5_text": "Conforme al RGPD (Reglamento UE 2016/679), tienes derecho de Acceso, Rectificación, Supresión, Limitación, Portabilidad y Oposición (ARSULIPO) sobre tus datos personales. Dado que todos los datos de usuario se almacenan localmente en tu navegador, ejerces estos derechos directamente borrando los datos del sitio en tu navegador. Para cualquier solicitud relativa a datos tratados por terceros (Vercel, Lemon Squeezy), contacta con el titular a través del correo electrónico de la Identidad Legal.",
       "p6_title": "6. Conservación de Datos",
-      "p6_text": "Los datos almacenados localmente en tu navegador persisten hasta que los elimines manualmente. Los registros del servidor (direcciones IP procesadas por Vercel) se conservan según la política de retención de datos de Vercel (normalmente hasta 30 días)."
+      "p6_text": "Los datos almacenados localmente en tu navegador persisten hasta que los elimines manualmente. Los registros del servidor (direcciones IP procesadas por Vercel) se conservan según la política de retención de datos de Vercel (normalmente hasta 30 días).",
+      "p1_link": "Identidad Legal"
     },
     "cookies": {
       "title": "Política de Cookies y Almacenamiento",

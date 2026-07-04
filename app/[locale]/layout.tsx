@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { Plus_Jakarta_Sans, Rajdhani } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -10,6 +11,21 @@ import Footer from '@/components/layout/Footer';
 import CookieBanner from '@/components/ui/CookieBanner';
 import SupportToast from '@/components/ui/SupportToast';
 import '@/styles/globals.css';
+import { locales } from '../../middleware';
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-body',
+});
+
+const rajdhani = Rajdhani({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  display: 'swap',
+  variable: '--font-display',
+});
 
 interface GenerateMetadataProps {
   params: Promise<{ locale: string }>;
@@ -31,16 +47,7 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
     },
     alternates: {
       canonical: `/${locale}`,
-      languages: {
-        'en': '/en',
-        'es': '/es',
-        'fr': '/fr',
-        'de': '/de',
-        'ja': '/ja',
-        'zh': '/zh',
-        'it': '/it',
-        'pt': '/pt',
-      },
+      languages: Object.fromEntries(locales.map(l => [l, `/${l}`])),
     },
     verification: {
       google: 'Xyp89jI-bHwUwOTdgbQ1RqpvXox4hL2qgNmmPgEU9AU',
@@ -70,8 +77,7 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
   };
 }
 
-// Supported locales list
-const locales = ['en', 'es', 'fr', 'de', 'ja', 'zh', 'it', 'pt'];
+// Supported locales are now imported from middleware
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -89,8 +95,11 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   // Get messages for next-intl hydration
   const messages = await getMessages();
 
+  // RTL Support for Arabic
+  const dir = locale === 'ar' ? 'rtl' : 'ltr';
+
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} dir={dir} className={`${plusJakartaSans.variable} ${rajdhani.variable}`} suppressHydrationWarning>
       <body>
         <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
         <NextIntlClientProvider messages={messages}>

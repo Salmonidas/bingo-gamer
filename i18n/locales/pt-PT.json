@@ -125,7 +125,10 @@
     "title": "Apoiar o Desenvolvimento",
     "description": "Se gosta de usar o Bingo Gamer, por favor considere apoiar o desenvolvedor com um café!",
     "donateAction": "☕ Pagar um café",
-    "dismiss": "Não mostrar novamente"
+    "dismiss": "Não mostrar novamente",
+    "farewellTitle": "Obrigado! 💙",
+    "farewellText": "Sem problema! Se algum dia quiser apoiar o desenvolvimento destes projetos gratuitos, encontrará sempre o botão \"Doar\" no topo e no fundo da página.",
+    "farewellClose": "Entendido!"
   },
   "legal": {
     "terms": {
@@ -147,17 +150,18 @@
       "title": "Política de Privacidade",
       "updated": "Última atualização",
       "p1_title": "1. Responsável pelo Tratamento",
-      "p1_text": "O Responsável pelo Tratamento é identificado na secção de Aviso Legal.",
+      "p1_text": "O Responsável pelo Tratamento é identificado na secção de Aviso Legal. Pode consultar a identidade completa do titular diretamente em:",
       "p2_title": "2. Dados que Tratamos",
       "p2_text": "O Bingo Gamer segue uma arquitetura rigorosamente local-first. Todos os dados são armazenados exclusivamente no seu navegador.",
       "p3_title": "3. Subcontratantes (Terceiros)",
-      "p3_text": "(1) Vercel Inc. — alojamento, processa endereços IP. (2) Lemon Squeezy — processador de pagamentos para doações voluntárias.",
+      "p3_text": "(1) Vercel Inc. — alojamento, processa endereços IP. (2) Lemon Squeezy — processador de pagamentos para doações voluntárias. Este site NÃO recolhe, armazena nem tem acesso a qualquer informação de cartão de pagamento em momento algum.",
       "p4_title": "4. Transferências Internacionais",
       "p4_text": "A Vercel e a Lemon Squeezy operam sob o quadro DPF UE-EUA e/ou Cláusulas Contratuais Tipo (SCCs).",
       "p5_title": "5. Os Seus Direitos (RGPD)",
       "p5_text": "Nos termos do RGPD, tem direito de acesso, retificação, apagamento, limitação, portabilidade e oposição. Como todos os dados são locais, exerce estes direitos apagando os dados do site no navegador.",
       "p6_title": "6. Conservação de Dados",
-      "p6_text": "Os dados locais persistem até à eliminação manual. Os logs do servidor (IPs via Vercel) são conservados até 30 dias."
+      "p6_text": "Os dados locais persistem até à eliminação manual. Os logs do servidor (IPs via Vercel) são conservados até 30 dias.",
+      "p1_link": "Identidade Legal"
     },
     "cookies": {
       "title": "Política de Cookies e Armazenamento",

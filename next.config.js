@@ -5,7 +5,8 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // We can add remotePatterns or other configs if needed later
+  // PPR (Partial Prerendering) — requires next@canary. Enable when upgrading:
+  // experimental: { ppr: 'incremental' },
 };
 
 module.exports = withNextIntl(nextConfig);
