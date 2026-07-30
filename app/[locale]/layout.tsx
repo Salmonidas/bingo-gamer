@@ -45,10 +45,6 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
       statusBarStyle: 'default',
       title: 'Bingo Gamer',
     },
-    alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(locales.map(l => [l, `/${l}`])),
-    },
     verification: {
       google: 'Xyp89jI-bHwUwOTdgbQ1RqpvXox4hL2qgNmmPgEU9AU',
     },

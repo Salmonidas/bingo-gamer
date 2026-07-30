@@ -1,11 +1,15 @@
 import React from 'react';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import { getLocalizedAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal.privacy' });
-  return { title: t('title') };
+  return {
+    title: t('title'),
+    alternates: getLocalizedAlternates(locale, 'privacy'),
+  };
 }
 
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
