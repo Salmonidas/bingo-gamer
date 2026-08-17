@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: ImportPageProps) {
   const t = await getTranslations({ locale, namespace: 'share' });
 
   return {
-    title: t('importTitle'),
+    title: t('title'),
     alternates: getLocalizedAlternates(locale, 'import'),
   };
 }

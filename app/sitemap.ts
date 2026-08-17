@@ -1,22 +1,15 @@
 import { MetadataRoute } from 'next';
 import { locales } from '../middleware';
+import { BASE_URL } from '@/lib/metadata';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bingo-gamer.vercel.app';
   const publicSubpaths = ['', '/create', '/import', '/privacy', '/terms', '/cookies'];
 
-  const sitemapEntries: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1.0,
-    },
-  ];
+  const sitemapEntries: MetadataRoute.Sitemap = [];
 
   for (const path of publicSubpaths) {
     for (const locale of locales) {
-      const url = `${baseUrl}/${locale}${path}`;
+      const url = `${BASE_URL}/${locale}${path}`;
       const isHome = path === '';
 
       sitemapEntries.push({

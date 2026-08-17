@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { locales } from '@/middleware';
 
-const BASE_URL = 'https://bingo-gamer.vercel.app';
+export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bingo-gamer.vercel.app';
 const DEFAULT_LOCALE = 'en-US';
 
 /**

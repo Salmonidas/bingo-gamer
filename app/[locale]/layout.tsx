@@ -12,6 +12,7 @@ import CookieBanner from '@/components/ui/CookieBanner';
 import SupportToast from '@/components/ui/SupportToast';
 import '@/styles/globals.css';
 import { locales } from '../../middleware';
+import { BASE_URL } from '@/lib/metadata';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
   return {
     title: t('title'),
     description: t('description'),
-    metadataBase: new URL('https://bingo-gamer.vercel.app'),
+    metadataBase: new URL(BASE_URL),
     manifest: '/manifest.json',
     appleWebApp: {
       capable: true,
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }: GenerateMetadataProps): Promi
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `https://bingo-gamer.vercel.app/${locale}`,
+      url: `${BASE_URL}/${locale}`,
       siteName: 'Bingo Gamer',
       images: [
         {
