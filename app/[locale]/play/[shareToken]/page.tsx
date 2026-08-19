@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: t('spectatorMode'),
     alternates: getLocalizedAlternates(locale, `play/${shareToken}`),
+    robots: { index: false, follow: false },
   };
 }
 

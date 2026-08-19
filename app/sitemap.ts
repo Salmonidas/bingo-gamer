@@ -3,7 +3,8 @@ import { locales } from '../middleware';
 import { BASE_URL } from '@/lib/metadata';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const publicSubpaths = ['', '/create', '/import', '/privacy', '/terms', '/cookies'];
+  // Public, statically accessible routes
+  const publicSubpaths = ['', '/create', '/privacy', '/terms', '/cookies'];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 

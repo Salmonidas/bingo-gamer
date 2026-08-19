@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: t('editMode'),
     alternates: getLocalizedAlternates(locale, `card/${editToken}`),
+    robots: { index: false, follow: false },
   };
 }
 
