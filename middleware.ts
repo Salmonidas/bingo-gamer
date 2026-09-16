@@ -1,8 +1,12 @@
 import createMiddleware from 'next-intl/middleware';
 
-export const locales = [
-  // Fallbacks genéricos (invisibles en el selector, solo routing)
-  'en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'zh',
+// Fallbacks genéricos (invisibles en el selector, solo routing y redirección interna)
+export const routingFallbacks = [
+  'en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'zh'
+];
+
+// Locales oficiales públicos (visibles en selector, sitemap e indexación)
+export const publicLocales = [
   // Español y variantes regionales
   'es-ES', 'es-419', 'es-US',
   // English variants
@@ -18,6 +22,8 @@ export const locales = [
   // Peninsular co-official + dialectos
   'ca', 'ca-ES-valencia', 'ca-ES-mallorca', 'gl-ES', 'eu-ES'
 ];
+
+export const locales = [...routingFallbacks, ...publicLocales];
 
 export default createMiddleware({
   locales,

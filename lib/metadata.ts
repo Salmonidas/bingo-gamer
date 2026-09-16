@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { locales } from '@/middleware';
+import { publicLocales } from '@/middleware';
 
 export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bingo-gamer.vercel.app';
 const DEFAULT_LOCALE = 'en-US';
@@ -16,7 +16,7 @@ export function getLocalizedAlternates(currentLocale: string, path: string = '')
 
   const languages: Record<string, string> = {};
 
-  locales.forEach((loc) => {
+  publicLocales.forEach((loc) => {
     languages[loc] = `${BASE_URL}/${loc}${normalizedPath}`;
   });
 

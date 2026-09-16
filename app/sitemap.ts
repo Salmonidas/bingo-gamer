@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { locales } from '../middleware';
+import { publicLocales } from '../middleware';
 import { BASE_URL } from '@/lib/metadata';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
   for (const path of publicSubpaths) {
-    for (const locale of locales) {
+    for (const locale of publicLocales) {
       const url = `${BASE_URL}/${locale}${path}`;
       const isHome = path === '';
 
